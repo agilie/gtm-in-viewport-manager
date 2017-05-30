@@ -42,7 +42,7 @@ To start to observe for the element on the page you just need to pass its CSS se
 
 ## Demo
 
-Also you can find an example [here](https://agilie.github.io/gtm-in-viewport-manager/dist/example.html) to play with it.
+Also you can find an example <a href="https://agilie.github.io/gtm-in-viewport-manager/dist/example.html" target="_blank">here</a> to play with it.
 
 ## Troubleshooting
 Problems? Check the [Issues](https://github.com/agilie/gtm-in-viewport-manager/issues) block
