@@ -40,6 +40,11 @@ This jQuery plugin is build for making developer's work process much easier. It�
 
 To start observing the element on the page, you just need to pass its CSS selector to ’selector’ key and event name ('eventName' key) which will be sent to GTM. Optionally, you can pass a callback function ('callback' key) that takes the event name as a parameter and will be called after the event has been sent..
 
+## Dependencies
+
+- jQuery - https://github.com/jquery/jquery-dist.git
+- isOnScreen jQuery plugin - https://github.com/moagrius/isOnScreen
+
 ## Building
 
 1. Install necessary packages.
@@ -52,7 +57,7 @@ To start observing the element on the page, you just need to pass its CSS select
     npm install -g bower
     ```
 
-3. Install JS dependencies.
+3. Install javascript libs dependencies - jQuery, isOnScreen jQuery plugin.
     ```bash
     bower install
     ```
