@@ -1,0 +1,17 @@
+/*
+
+jQuery GTM In-Viewport Manager Plugin.
+A manager of in-viewport events for Google Tag Manager.
+
+Author:
+- Agilie Team <info@agilie.com> (https://agilie.com)
+
+Contributors:
+- Eugene Zaretsky <eugene@agilie.com> (https://github.com/ujinius)
+
+Version: <%= version %>
+Full source at https://github.com/agilie/....
+
+MIT License, https://github.com/agilie/.../blob/master/LICENSE.md
+
+*/

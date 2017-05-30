@@ -1,0 +1,36 @@
+{
+  "name": "jquery-gtm-in-viewport-manager-plugin",
+  "version": "1.0.0",
+  "description": "A manager of in-viewport events for Google Tag Manager.",
+  "main": "jquery.gtm-in-viewport.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git_url"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "gtm",
+    "tag",
+    "event",
+    "in-viewport"
+  ],
+  "author": "Agilie Team <info@agilie.com> (https://agilie.com)",
+  "contributors": [
+    "Eugene Zareckiy <eugene@agilie.com> (https://github.com/ujinius)"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-coffee": "^2.3.4",
+    "gulp-coffeelint": "^0.6.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-header": "^1.8.8",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "wiredep": "^4.0.0"
+  }
+}

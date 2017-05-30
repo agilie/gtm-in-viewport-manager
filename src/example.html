@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GTM In-Viewport jQuery Plugin - Example of usage</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <style>
+        .brick {
+            width: 100px;
+            height: 60px;
+            text-align: center;
+            vertical-align: middle;
+            margin-bottom: 25px;
+            padding-top: 25px;
+            color: #ffffff;
+        }
+
+        #monitoring {
+            width: 400px;
+            height: 210px;
+            overflow-y: scroll;
+            border: solid 5px #ababab;
+            background-color: #cdcdcd;
+            position: fixed;
+            top: 80px;
+            right: 10px;
+            color: #777777;
+            opacity: 0.4;
+        }
+
+        .green { background-color: #19a43e; }
+        .orange { background-color: #c56630; }
+        .blue { background-color: #1e55aa; }
+        .violet { background-color: #8f2e9e; }
+        .yellow { background-color: #92870a; }
+        .red { background-color: #c3402f; }
+    </style>
+</head>
+<body style="height: 2000px;">
+    <h1>GTM In-Viewport jQuery Plugin - Example of usage</h1>
+    <p>Scroll down the page and see what events will be sent (look them in the js console).</p>
+
+    <div id="briks">
+        <!--<div class="brick green" style="margin-left: 30px;" id="brick_1"></div>-->
+        <!--<div class="brick orange" style="margin-top: 120px; margin-left: 100px;" id="brick_2"></div>-->
+        <!--<div class="brick blue" style="margin-top: 300px; margin-left: 50px;" id="brick_3"></div>-->
+        <!--<div class="brick violet" style="margin-top: 200px; margin-bottom: 100px; margin-left: 200px;" id="brick_4"></div>-->
+    </div>
+
+    <div id="monitoring"></div>
+
+    <script src="build/vendors.min.js"></script>
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-MFGDTX"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'http://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXX');</script>
+    <!-- End Google Tag Manager -->
+
+    <script src="build/jquery.gtm-in-viewport.min.js"></script>
+
+    <script type="application/javascript">
+        $(document).ready(function () {
+
+            var bricks = [],
+                colors = ['green', 'orange', 'blue', 'violet', 'yellow', 'red'],
+                rows = 1;
+
+            for (var ind = 1; ind < 11; ind++) {
+                $('<div>').addClass('brick')
+                          .addClass(colors[Math.floor(Math.random() * colors.length)])
+                          .attr('id', 'brick_' + ind)
+                          .css({'margin-left': (Math.floor(Math.random() * 500) + 10) + 'px'})
+                          .css({'margin-bottom': Math.floor(Math.random() * 150) + 'px'})
+                          .text('brick_' + ind)
+                          .appendTo($('#briks'));
+
+                bricks.push({
+                    selector: '#brick_' + ind,
+                    eventName: 'brick_' + ind + '_was_viewed_event',
+                    callback: function(eventName) {
+                        $('#monitoring').append(
+                            '<p style="padding-left: 10px;">' + rows++ + ') Event "' + eventName + '"' + ' was fired!</p>'
+                        );
+                        $('#monitoring')[0].scrollTop = 99999;
+                    }
+                });
+            }
+
+            // setup configuration of the page for GTM In-Viewport plugin
+            GTMViewport.init(bricks);
+
+            var ff = [
+                {
+                    selector: '#some_element_id_1',
+                    eventName: 'some_element_id_1_was_viewed_event',
+                    callback: function(eventName) {
+                        console.log(eventName);
+                    }
+                },
+                {
+                    selector: '#some_element_id_2',
+                    eventName: 'some_element_id_2_was_viewed_event'
+                },
+                {
+                    selector: '#some_element_id_3',
+                    eventName: 'some_element_id_4_was_viewed_event'
+                }
+            ];
+
+        });
+    </script>
+</body>
+</html>

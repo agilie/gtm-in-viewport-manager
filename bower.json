@@ -1,0 +1,32 @@
+{
+  "name": "jQuery GTM In-Viewport Manager Plugin",
+  "authors": [
+    "Agilie Team <info@agilie.com> (https://agilie.com)"
+  ],
+  "contributors": [
+    "Eugene Zareckiy <eugene@agilie.com> (https://github.com/ujinius)"
+  ],
+  "description": "A manager of in-viewport events for Google Tag Manager.",
+  "main": "jquery.gtm-in-viewport.js",
+  "keywords": [
+    "jquery-plugin",
+    "gtm",
+    "tag",
+    "event",
+    "in-viewport"
+  ],
+  "license": "MIT",
+  "homepage": "git_url",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "jquery-is-on-screen-moagrius": "git://github.com/moagrius/isOnScreen.git"
+  }
+}
