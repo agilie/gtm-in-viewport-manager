@@ -5,11 +5,11 @@ A manager of in-viewport events for GTM (Google Tag Manager)
 
 **Current version:** *1.0.0*
 
-Google Tag Manager is a tool for simple and convenient tag/events management solutions. They have powerful interface to setup various events which is fired on different needs of a WEB/SEO masters.
+We are happy to share with you our new jQuery GTM In-Viewport Manager Plugin aimed to ease a way of working with Google Tag Manager (GTM).
 
-But in some cases we should spent a lot of time to add some additional handlers of ’specific’ events - such as in-viewport event - they should fire when some element is shown to website user.
+GTM is a free tool for simple and convenient tag/events management solutions which makes it possible to add and update website tags with just a few clicks, without needing to edit the website code. It has a powerful interface allowing to set up various events that should trigger in concordance with WEB/SEO masters' needs. But in some cases we have to spend a lot of time to add extra handlers for ’specific’ events, - such as in-viewport event - which should fire when some element is shown to a website user.
 
-This jQuery plugin is build for making developer life easy when he needs to setup GTM events on some elements when they appears in the viewport of the browser.
+This jQuery plugin is build for making developer's work process much easier. It’s really helpful in cases if you needs to set up GTM events for the elements initially unseen when they appears in the browser viewport.
 
 ## Installation/integration and usage:
 
@@ -38,11 +38,35 @@ This jQuery plugin is build for making developer life easy when he needs to setu
 </script>
 ```
 
-To start to observe for the element on the page you just need to pass its CSS selector in ’selector’ key and event name ('eventName' key) which will be sent to GTM. Optionally you can pass callback function ('callback' key) which will be called after the event will be sent. Callback function has event name as a parameter.
+To start observing the element on the page, you just need to pass its CSS selector to ’selector’ key and event name ('eventName' key) which will be sent to GTM. Optionally, you can pass a callback function ('callback' key) that takes the event name as a parameter and will be called after the event has been sent..
+
+## Building
+
+1. Install necessary packages.
+    ```bash
+    npm install
+    ```
+
+2. Install Bower globally.
+    ```bash
+    npm install -g bower
+    ```
+
+3. Install JS dependencies.
+    ```bash
+    bower install
+    ```
+
+4. Build (to 'dist' folder).
+    ```bash
+    gulp
+    ```
 
 ## Demo
 
-Also you can find an example [here](https://agilie.github.io/gtm-in-viewport-manager/dist/example.html) to play with it.
+You can also see an example [here](https://agilie.github.io/gtm-in-viewport-manager/dist/example.html) in order to try it out.
+
+![demo image](https://agilie.github.io/gtm-in-viewport-manager/images/gtm-in-viewport-manager-example.png)
 
 ## Troubleshooting
 Problems? Check the [Issues](https://github.com/agilie/gtm-in-viewport-manager/issues) block
