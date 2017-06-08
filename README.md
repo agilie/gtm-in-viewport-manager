@@ -80,8 +80,11 @@ to find the solution or create an new issue that we will fix asap. Feel free to 
 ## Author
 This Rails application template is open-sourced by [Agilie Team](https://www.agilie.com) <info@agilie.com>
 
-## Contributor
-[Eugene Zaretskiy](https://github.com/ujinius) <eugene@agilie.com>
+## Contributors
+- [Eugene Zaretskiy](https://github.com/ujinius)
+
+## Contact us
+<web@agilie.com>
 
 ## License
 The [MIT](LICENSE.md) License (MIT) Copyright © 2017 [Agilie Team](https://www.agilie.com)
