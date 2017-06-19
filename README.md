@@ -1,9 +1,8 @@
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/agilie/Rails-Application-Template)
 
 # jQuery GTM In-Viewport Manager Plugin
-A manager of in-viewport events for GTM (Google Tag Manager)
 
-**Current version:** *1.0.0*
+A manager of in-viewport events for GTM (Google Tag Manager).
 
 We are happy to share with you our new jQuery GTM In-Viewport Manager Plugin aimed to ease a way of working with Google Tag Manager (GTM).
 
@@ -78,13 +77,15 @@ Problems? Check the [Issues](https://github.com/agilie/gtm-in-viewport-manager/i
 to find the solution or create an new issue that we will fix asap. Feel free to contribute.
 
 ## Author
-This Rails application template is open-sourced by [Agilie Team](https://www.agilie.com) <info@agilie.com>
+This jQuery plugin is open-sourced by [Agilie Team](https://www.agilie.com) <info@agilie.com>
 
 ## Contributors
 - [Eugene Zaretskiy](https://github.com/ujinius)
 
 ## Contact us
-<web@agilie.com>
+If you have any questions, suggestions or just need a help with web or mobile development, please email us at <web@agilie.com>. You can ask us anything from basic to complex questions.
+
+We will continue publishing new open-source projects. Stay with us, more updates will follow!
 
 ## License
 The [MIT](LICENSE.md) License (MIT) Copyright © 2017 [Agilie Team](https://www.agilie.com)
