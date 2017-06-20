@@ -1,9 +1,8 @@
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/agilie/Rails-Application-Template)
 
 # jQuery GTM In-Viewport Manager Plugin
-A manager of in-viewport events for GTM (Google Tag Manager)
 
-**Current version:** *1.0.0*
+A manager of in-viewport events for GTM (Google Tag Manager).
 
 We are happy to share with you our new jQuery GTM In-Viewport Manager Plugin aimed to ease a way of working with Google Tag Manager (GTM).
 
@@ -40,6 +39,11 @@ This jQuery plugin is build for making developer's work process much easier. It�
 
 To start observing the element on the page, you just need to pass its CSS selector to ’selector’ key and event name ('eventName' key) which will be sent to GTM. Optionally, you can pass a callback function ('callback' key) that takes the event name as a parameter and will be called after the event has been sent..
 
+## Dependencies
+
+- jQuery - https://github.com/jquery/jquery-dist.git
+- isOnScreen jQuery plugin - https://github.com/moagrius/isOnScreen
+
 ## Building
 
 1. Install necessary packages.
@@ -52,7 +56,7 @@ To start observing the element on the page, you just need to pass its CSS select
     npm install -g bower
     ```
 
-3. Install JS dependencies.
+3. Install javascript libs dependencies - jQuery, isOnScreen jQuery plugin.
     ```bash
     bower install
     ```
@@ -73,10 +77,15 @@ Problems? Check the [Issues](https://github.com/agilie/gtm-in-viewport-manager/i
 to find the solution or create an new issue that we will fix asap. Feel free to contribute.
 
 ## Author
-This Rails application template is open-sourced by [Agilie Team](https://www.agilie.com) <info@agilie.com>
+This jQuery plugin is open-sourced by [Agilie Team](https://www.agilie.com) <info@agilie.com>
 
-## Contributor
-[Eugene Zaretskiy](https://github.com/ujinius) <eugene@agilie.com>
+## Contributors
+- [Eugene Zaretskiy](https://github.com/ujinius)
+
+## Contact us
+If you have any questions, suggestions or just need a help with web or mobile development, please email us at <web@agilie.com>. You can ask us anything from basic to complex questions.
+
+We will continue publishing new open-source projects. Stay with us, more updates will follow!
 
 ## License
 The [MIT](LICENSE.md) License (MIT) Copyright © 2017 [Agilie Team](https://www.agilie.com)
