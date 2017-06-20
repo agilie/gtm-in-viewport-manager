@@ -1,6 +1,6 @@
 {
   "name": "jquery-gtm-in-viewport-manager-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A manager of in-viewport events for Google Tag Manager.",
   "main": "dist/build/jquery.gtm-in-viewport.js",
   "scripts": {
