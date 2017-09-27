@@ -9,7 +9,7 @@ Author:
 Contributors:
 - Eugene Zaretsky <eugene@agilie.com> (https://github.com/ujinius)
 
-Version: 1.0.0
+Version: 1.0.1
 Full source at https://github.com/agilie/....
 
 MIT License, https://github.com/agilie/.../blob/master/LICENSE.md
